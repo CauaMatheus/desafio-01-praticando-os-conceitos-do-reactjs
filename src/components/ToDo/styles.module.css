@@ -1,0 +1,103 @@
+.todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  
+  max-width: 46rem;
+  margin-top: -1.75rem;
+  padding: 0 2rem;
+}
+
+.todo form {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.todo form input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  background: var(--gray-500);
+  color: var(--white);
+
+  height: 3.5rem;
+}
+
+.todo form button {
+  display: flex;
+  line-height: 0;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+
+  font-weight: bold;
+  color: var(--white);
+
+  background: var(--blue-dark);
+  border: 0;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.todo form button:hover {
+  background: var(--blue);
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  max-width: 46rem;
+  width: 100%;
+  gap: 0.75rem;
+}
+
+.taskList header {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+}
+
+.createdTasks {
+  color: var(--blue);
+}
+
+.completedTasks {
+  color: var(--purple);
+}
+
+.taskList header span {
+  font-weight: bold;
+  background: var(--gray-400);
+  line-height: 0;
+  padding: 0.3rem 0.5rem;
+  border-radius: 999px;
+}
+
+
+.emptyTasksList img {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 1rem;
+}
+
+.emptyTasksList {
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  border: 0;
+  border-top: 2px solid var(--gray-400);
+  border-radius: 16px;
+  color: var(--gray-300);
+}

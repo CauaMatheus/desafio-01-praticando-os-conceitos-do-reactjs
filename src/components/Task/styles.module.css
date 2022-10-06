@@ -1,0 +1,58 @@
+.task {
+  display: flex;
+  align-self: flex-start;
+  width: 100%;
+  background: var(--gray-500);
+  justify-content: space-between;
+
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.task > div {
+  align-self: flex-start;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.task button {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  line-height: 0;
+}
+
+.deleteButton {
+  color: var(--gray-300) !important;
+}
+
+.deleteButton:hover {
+  color: var(--danger) !important;
+}
+
+.toCheck button {
+  color: var(--blue);
+}
+
+.toCheck button:hover {
+  filter: drop-shadow(0 0 0.25rem var(--blue));
+}
+
+.checked {
+  opacity: 0.5;
+}
+
+.checked button {
+  color: var(--purple-dark);
+}
+
+.checked button:hover {
+  color: var(--purple);
+}
+
+.checked p {
+  text-decoration: line-through;
+}
